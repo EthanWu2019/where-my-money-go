@@ -5,40 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>海绵酱记账本</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
-<body>
+<body class="dark-mode">
     <header class="header">
         <div class="header-content">
-            <h1>📊 海绵酱记账本</h1>
-            <div class="header-info">
-                <span id="update-time">最后更新: --</span>
-                <span id="exchange-rate">实时汇率: --</span>
+            <div class="header-main">
+                <h1>📊 海绵酱记账本</h1>
+            </div>
+            <div class="header-controls">
+                <div class="meta-info">
+                    <span id="update-time">最后同步: --</span>
+                    <span id="exchange-rate">实时汇率: --</span>
+                </div>
+                <button id="theme-toggle" class="theme-toggle-btn" title="切换主题">
+                    <span id="theme-icon">☀️</span>
+                </button>
             </div>
         </div>
     </header>
 
-    <nav class="tabs">
-        <button class="tab-btn active" data-view="all">📋 总览</button>
-        <button class="tab-btn" data-view="weekly">📅 周报</button>
-        <button class="tab-btn" data-view="monthly">📅 月报</button>
-    </nav>
+    <div class="tabs-wrapper">
+        <nav class="tabs">
+            <div class="tab-indicator"></div>
+            <button class="tab-btn active" data-view="all">📋 战略总览</button>
+            <button class="tab-btn" data-view="weekly">📅 周期简报</button>
+            <button class="tab-btn" data-view="monthly">📅 月度核算</button>
+        </nav>
+    </div>
 
     <main class="container">
-        <!-- 控制栏 -->
-        <div class="controls">
+        <!-- 控制与视图导航栏 -->
+        <div class="controls-bar">
             <div class="nav-buttons" id="period-nav" style="display: none;">
-                <button id="prev-period" class="btn secondary">⬅️ 上一期</button>
+                <button id="prev-period" class="btn secondary-btn">⬅️ 上一期</button>
                 <span id="current-period-label" class="period-label"></span>
-                <button id="next-period" class="btn secondary">下一期 ➡️</button>
+                <button id="next-period" class="btn secondary-btn">下一期 ➡️</button>
             </div>
             
-            <div class="currency-toggle">
-                <button class="btn active" id="btn-usd">🇺🇸 USD</button>
-                <button class="btn" id="btn-rmb">🇨🇳 RMB</button>
+            <div class="currency-switcher">
+                <div class="currency-indicator"></div>
+                <button class="currency-btn active" id="btn-usd">🇺🇸 USD</button>
+                <button class="currency-btn" id="btn-rmb">🇨🇳 RMB</button>
             </div>
         </div>
 
-        <!-- 汇总卡片 -->
+        <!-- 核心财务摘要 KPI 卡片 -->
         <section class="summary-grid">
             <div class="card summary-card income">
                 <div class="card-title">💚 总收入</div>
@@ -54,19 +66,37 @@
             </div>
         </section>
 
-        <!-- 分类明细 -->
-        <section class="section-container">
-            <h2 class="section-title">分类明细</h2>
-            <div class="category-grid" id="category-container">
-                <!-- 动态渲染分类卡片 -->
+        <!-- 中部：深度数据可视化与分类分析 -->
+        <div class="dashboard-layout">
+            <div class="layout-left">
+                <section class="section-container">
+                    <h2 class="section-title">📊 分类明细</h2>
+                    <div class="category-grid" id="category-container">
+                        <!-- 动态渲染分类卡片 -->
+                    </div>
+                </section>
             </div>
-        </section>
+            
+            <div class="layout-right">
+                <section class="section-container">
+                    <h2 class="section-title">📈 支出分布</h2>
+                    <div class="card chart-card">
+                        <div class="chart-wrapper">
+                            <canvas id="expenseChart"></canvas>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
 
-        <!-- 记录表格 -->
+        <!-- 底部：详细流水明细表 -->
         <section class="section-container">
             <div class="table-header-flex">
-                <h2 class="section-title">收支记录</h2>
-                <span class="filter-tip" id="filter-tip" style="display: none;">当前筛选: <span id="current-filter"></span> <button id="clear-filter">清除</button></span>
+                <h2 class="section-title">📋 交易流水</h2>
+                <div class="filter-badge" id="filter-tip" style="display: none;">
+                    当前筛选: <span id="current-filter"></span> 
+                    <button id="clear-filter" class="clear-btn">✕</button>
+                </div>
             </div>
             <div class="table-wrapper card">
                 <table id="records-table">
