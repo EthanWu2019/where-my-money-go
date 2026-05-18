@@ -1,7 +1,61 @@
 {
-  "updatedAt": "2026-05-17T00:16:10-05:00",
-  "rate": 6.8263,
+  "updatedAt": "2026-05-17T23:10:58-05:00",
+  "rate": 6.81799,
   "entries": [
+    {
+      "name": "帮桃总代肝",
+      "amount": 160,
+      "currency": "RMB",
+      "type": "收入",
+      "category": "零头 🪙",
+      "date": "2026-05-17",
+      "note": "帮桃总代肝"
+    },
+    {
+      "name": "打车回家",
+      "amount": 11,
+      "currency": "USD",
+      "type": "支出",
+      "category": "其他 📦",
+      "date": "2026-05-17",
+      "note": "看完电影打车回家"
+    },
+    {
+      "name": "打车去电影院",
+      "amount": 9,
+      "currency": "USD",
+      "type": "支出",
+      "category": "其他 📦",
+      "date": "2026-05-17",
+      "note": "打车去电影院"
+    },
+    {
+      "name": "AMC 爆米花 + 可乐 x2",
+      "amount": 24.13,
+      "currency": "USD",
+      "type": "支出",
+      "category": "饮食 🍜",
+      "date": "2026-05-17",
+      "note": "AMC Esquire 7 · Obsession 17:00 + The Devil Wears Prada 2 19:30 · 电影免费(AMC会员) · 给爆米花留热量中午没吃饭"
+    },
+    {
+      "name": "帮cbk代肝鸣潮",
+      "amount": 50,
+      "currency": "RMB",
+      "type": "收入",
+      "category": "零头 🪙",
+      "date": "2026-05-17",
+      "note": "帮cbk代肝鸣潮"
+    },
+    {
+      "name": "二手空气炸锅 x2",
+      "amount": 25,
+      "currency": "USD",
+      "type": "支出",
+      "category": "其他 📦",
+      "date": "2026-05-17",
+      "note": "从学长那买了两个空气炸锅"
+    },
     {
       "name": "看电影",
       "amount": 21.43,
@@ -75,6 +129,15 @@
       "note": ""
     },
     {
+      "name": "话费",
+      "amount": 33.3,
+      "currency": "USD",
+      "type": "支出",
+      "category": "其他 📦",
+      "date": "2026-05-11",
+      "note": "5月话费"
+    },
+    {
       "name": "点外卖",
       "amount": 60,
       "currency": "USD",
@@ -91,6 +154,15 @@
       "category": "饮食 🍜",
       "date": "2026-05-07",
       "note": ""
+    },
+    {
+      "name": "优衣库买衣服",
+      "amount": 164,
+      "currency": "USD",
+      "type": "支出",
+      "category": "其他 📦",
+      "date": "2026-05-04",
+      "note": "优衣库买衣服"
     },
     {
       "name": "SwitchBot 红外控制器",
