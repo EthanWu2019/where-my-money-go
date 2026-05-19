@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-05-17T23:10:58-05:00",
-  "rate": 6.81799,
+  "updatedAt": "2026-05-18T23:10:11-05:00",
+  "rate": 6.812607,
   "entries": [
+    {
+      "name": "外卖",
+      "amount": 50,
+      "currency": "USD",
+      "type": "支出",
+      "category": "饮食 🍜",
+      "date": "2026-05-18",
+      "note": "50刀外卖"
+    },
     {
       "name": "帮桃总代肝",
       "amount": 160,
