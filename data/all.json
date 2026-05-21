@@ -1,7 +1,133 @@
 {
-  "updatedAt": "2026-05-19T23:10:19-05:00",
-  "rate": 6.820724,
+  "updatedAt": "2026-05-20T23:10:07-05:00",
+  "rate": 6.81196,
   "entries": [
+    {
+      "name": "鸣潮充值",
+      "amount": 6,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-05-21",
+      "note": "40up，10武器，70歪，80up，70up，30歪，70up，60歪，0up，换两up"
+    },
+    {
+      "name": "鸣潮充值",
+      "amount": 648,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-05-21",
+      "note": "40up，10武器，70歪，80up，70up，30歪，70up，60歪，0up，换两up"
+    },
+    {
+      "name": "鸣潮充值",
+      "amount": 648,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-05-21",
+      "note": "40up，10武器，70歪，80up，70up，30歪，70up，60歪，0up，换两up"
+    },
+    {
+      "name": "鸣潮充值",
+      "amount": 30,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-05-21",
+      "note": "40up，10武器，70歪，80up，70up，30歪，70up，60歪，0up，换两up"
+    },
+    {
+      "name": "鸣潮充值",
+      "amount": 648,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-05-21",
+      "note": "40up，10武器，70歪，80up，70up，30歪，70up，60歪，0up，换两up"
+    },
+    {
+      "name": "鸣潮充值",
+      "amount": 648,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-05-21",
+      "note": "40up，10武器，70歪，80up，70up，30歪，70up，60歪，0up，换两up"
+    },
+    {
+      "name": "鸣潮充值",
+      "amount": 98,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-05-21",
+      "note": "40up，10武器，70歪，80up，70up，30歪，70up，60歪，0up，换两up"
+    },
+    {
+      "name": "鸣潮充值",
+      "amount": 198,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-05-21",
+      "note": "40up，10武器，70歪，80up，70up，30歪，70up，60歪，0up，换两up"
+    },
+    {
+      "name": "鸣潮充值",
+      "amount": 328,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-05-21",
+      "note": "40up，10武器，70歪，80up，70up，30歪，70up，60歪，0up，换两up"
+    },
+    {
+      "name": "鸣潮充值",
+      "amount": 68,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-05-20",
+      "note": ""
+    },
+    {
+      "name": "鸣潮充值",
+      "amount": 198,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-05-20",
+      "note": ""
+    },
+    {
+      "name": "鸣潮充值",
+      "amount": 68,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-05-20",
+      "note": ""
+    },
+    {
+      "name": "域名购买",
+      "amount": 10.5,
+      "currency": "USD",
+      "type": "支出",
+      "category": "其他 📦",
+      "date": "2026-05-20",
+      "note": "Cloudflare 域名，用于 Hermes 仪表盘"
+    },
+    {
+      "name": "Schnucks买菜",
+      "amount": 142,
+      "currency": "USD",
+      "type": "支出",
+      "category": "饮食 🍜",
+      "date": "2026-05-20",
+      "note": "各种生鲜"
+    },
     {
       "name": "外卖",
       "amount": 50,
