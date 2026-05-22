@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-05-20T23:10:07-05:00",
-  "rate": 6.81196,
+  "updatedAt": "2026-05-21T23:10:25-05:00",
+  "rate": 6.810969,
   "entries": [
+    {
+      "name": "外卖",
+      "amount": 52,
+      "currency": "USD",
+      "type": "支出",
+      "category": "饮食 🍜",
+      "date": "2026-05-21",
+      "note": ""
+    },
     {
       "name": "鸣潮充值",
       "amount": 6,
