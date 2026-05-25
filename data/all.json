@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-05-23T23:10:45-05:00",
-  "rate": 6.812416,
+  "updatedAt": "2026-05-24T23:11:01-05:00",
+  "rate": 6.801586,
   "entries": [
+    {
+      "name": "点外卖",
+      "amount": 45,
+      "currency": "USD",
+      "type": "支出",
+      "category": "饮食 🍜",
+      "date": "2026-05-24",
+      "note": ""
+    },
     {
       "name": "外卖",
       "amount": 52,
