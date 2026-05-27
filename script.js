@@ -211,14 +211,13 @@ function formatExecutiveCurrency(val) {
 
 function renderExpenseChart(categoryStats) {
     const isDark = document.body.classList.contains('dark-mode');
-    const labelColor = isDark ? '#a0a0a5' : '#86868b';
+    const labelColor = isDark ? '#8E8E93' : '#636366';
 
     const expenseCategories = Object.keys(categoryStats).filter(
         k => categoryStats[k].count > 0 && categoryStats[k].type === '支出'
     );
     const dataValues = expenseCategories.map(k => categoryStats[k].amount.toFixed(2));
     
-    // 生成包含金额的列表形态说明
     const labelsWithAmounts = expenseCategories.map(k => {
         return `${k} - ${formatExecutiveCurrency(categoryStats[k].amount)}`;
     });
@@ -229,6 +228,7 @@ function renderExpenseChart(categoryStats) {
         expenseChartInstance.data.labels = labelsWithAmounts;
         expenseChartInstance.data.datasets[0].data = dataValues;
         expenseChartInstance.options.plugins.legend.labels.color = labelColor;
+        expenseChartInstance.data.datasets[0].borderColor = isDark ? 'rgba(11, 11, 20, 0.8)' : 'rgba(242, 242, 247, 0.8)';
         expenseChartInstance.update();
         return;
     }
@@ -240,35 +240,46 @@ function renderExpenseChart(categoryStats) {
             datasets: [{
                 data: dataValues,
                 backgroundColor: [
-                    '#ff453a', '#ff9f0a', '#ffd60a', '#5e5ce6', '#30d158', '#bf5af2', '#8e8e93'
+                    '#FB7185', '#FBBF24', '#A78BFA', '#60A5FA', '#34D399', '#F472B6', '#818CF8', '#FCA5A5', '#FCD34D', '#C084FC'
                 ],
-                borderWidth: 0,
-                hoverOffset: 8
+                borderColor: isDark ? 'rgba(11, 11, 20, 0.8)' : 'rgba(242, 242, 247, 0.8)',
+                borderWidth: 3,
+                hoverOffset: 10,
+                hoverBorderWidth: 0
             }]
         },
         options: {
             responsive: true,
             maintainAspectRatio: false,
-            cutout: '65%',
-            animation: { duration: 500 },
+            cutout: '68%',
+            animation: {
+                animateRotate: true,
+                animateScale: true,
+                duration: 800,
+                easing: 'easeOutQuart'
+            },
             plugins: {
                 legend: {
-                    position: 'right', // 放在右侧呈现列表形态
+                    position: 'right',
                     align: 'center',
                     labels: {
                         color: labelColor,
                         usePointStyle: true,
                         pointStyle: 'circle',
                         padding: 16,
-                        font: { size: 13 }
+                        font: { size: 13, weight: '600', family: "'Inter', sans-serif" }
                     }
                 },
                 tooltip: {
-                    backgroundColor: isDark ? 'rgba(30, 30, 30, 0.9)' : 'rgba(255, 255, 255, 0.9)',
-                    titleColor: isDark ? '#fff' : '#000',
-                    bodyColor: isDark ? '#ccc' : '#333',
-                    borderColor: 'rgba(0,0,0,0.1)',
-                    borderWidth: 1
+                    backgroundColor: isDark ? 'rgba(11, 11, 20, 0.95)' : 'rgba(255, 255, 255, 0.95)',
+                    titleColor: isDark ? '#F5F5F7' : '#1C1C1E',
+                    bodyColor: isDark ? '#A78BFA' : '#7C3AED',
+                    borderColor: isDark ? 'rgba(139, 92, 246, 0.2)' : 'rgba(139, 92, 246, 0.15)',
+                    borderWidth: 1,
+                    cornerRadius: 12,
+                    padding: 12,
+                    titleFont: { weight: '700' },
+                    bodyFont: { weight: '600' }
                 }
             }
         }
