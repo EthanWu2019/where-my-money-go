@@ -113,6 +113,9 @@ def main():
     # Remove empty-name entries
     parsed = [e for e in parsed if e["name"].strip()]
     
+    if not parsed:
+        print("⚠️ 拉取到 0 条记录，可能是 API 异常，跳过写入以保护现有数据")
+        return
     print(f"📋 读取 {len(parsed)} 条记录")
     
     # Get exchange rate
