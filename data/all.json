@@ -1,0 +1,375 @@
+{
+  "updatedAt": "2026-05-26T20:37:04-05:00",
+  "rate": 6.798706,
+  "entries": [
+    {
+      "name": "点外卖",
+      "amount": 45,
+      "currency": "USD",
+      "type": "支出",
+      "category": "饮食 🍜",
+      "date": "2026-05-24",
+      "note": ""
+    },
+    {
+      "name": "外卖",
+      "amount": 52,
+      "currency": "USD",
+      "type": "支出",
+      "category": "饮食 🍜",
+      "date": "2026-05-21",
+      "note": ""
+    },
+    {
+      "name": "鸣潮充值",
+      "amount": 6,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-05-21",
+      "note": "40up，10武器，70歪，80up，70up，30歪，70up，60歪，0up，换两up"
+    },
+    {
+      "name": "鸣潮充值",
+      "amount": 648,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-05-21",
+      "note": "40up，10武器，70歪，80up，70up，30歪，70up，60歪，0up，换两up"
+    },
+    {
+      "name": "鸣潮充值",
+      "amount": 648,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-05-21",
+      "note": "40up，10武器，70歪，80up，70up，30歪，70up，60歪，0up，换两up"
+    },
+    {
+      "name": "鸣潮充值",
+      "amount": 30,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-05-21",
+      "note": "40up，10武器，70歪，80up，70up，30歪，70up，60歪，0up，换两up"
+    },
+    {
+      "name": "鸣潮充值",
+      "amount": 648,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-05-21",
+      "note": "40up，10武器，70歪，80up，70up，30歪，70up，60歪，0up，换两up"
+    },
+    {
+      "name": "鸣潮充值",
+      "amount": 648,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-05-21",
+      "note": "40up，10武器，70歪，80up，70up，30歪，70up，60歪，0up，换两up"
+    },
+    {
+      "name": "鸣潮充值",
+      "amount": 98,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-05-21",
+      "note": "40up，10武器，70歪，80up，70up，30歪，70up，60歪，0up，换两up"
+    },
+    {
+      "name": "鸣潮充值",
+      "amount": 198,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-05-21",
+      "note": "40up，10武器，70歪，80up，70up，30歪，70up，60歪，0up，换两up"
+    },
+    {
+      "name": "鸣潮充值",
+      "amount": 328,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-05-21",
+      "note": "40up，10武器，70歪，80up，70up，30歪，70up，60歪，0up，换两up"
+    },
+    {
+      "name": "鸣潮充值",
+      "amount": 68,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-05-20",
+      "note": ""
+    },
+    {
+      "name": "鸣潮充值",
+      "amount": 198,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-05-20",
+      "note": ""
+    },
+    {
+      "name": "鸣潮充值",
+      "amount": 68,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-05-20",
+      "note": ""
+    },
+    {
+      "name": "域名购买",
+      "amount": 10.5,
+      "currency": "USD",
+      "type": "支出",
+      "category": "其他 📦",
+      "date": "2026-05-20",
+      "note": "Cloudflare 域名，用于 Hermes 仪表盘"
+    },
+    {
+      "name": "Schnucks买菜",
+      "amount": 142,
+      "currency": "USD",
+      "type": "支出",
+      "category": "饮食 🍜",
+      "date": "2026-05-20",
+      "note": "各种生鲜"
+    },
+    {
+      "name": "外卖",
+      "amount": 50,
+      "currency": "USD",
+      "type": "支出",
+      "category": "饮食 🍜",
+      "date": "2026-05-18",
+      "note": "50刀外卖"
+    },
+    {
+      "name": "帮桃总代肝",
+      "amount": 160,
+      "currency": "RMB",
+      "type": "收入",
+      "category": "零头 🪙",
+      "date": "2026-05-17",
+      "note": "帮桃总代肝"
+    },
+    {
+      "name": "打车回家",
+      "amount": 11,
+      "currency": "USD",
+      "type": "支出",
+      "category": "其他 📦",
+      "date": "2026-05-17",
+      "note": "看完电影打车回家"
+    },
+    {
+      "name": "打车去电影院",
+      "amount": 9,
+      "currency": "USD",
+      "type": "支出",
+      "category": "其他 📦",
+      "date": "2026-05-17",
+      "note": "打车去电影院"
+    },
+    {
+      "name": "AMC 爆米花 + 可乐 x2",
+      "amount": 24.13,
+      "currency": "USD",
+      "type": "支出",
+      "category": "饮食 🍜",
+      "date": "2026-05-17",
+      "note": "AMC Esquire 7 · Obsession 17:00 + The Devil Wears Prada 2 19:30 · 电影免费(AMC会员) · 给爆米花留热量中午没吃饭"
+    },
+    {
+      "name": "帮cbk代肝鸣潮",
+      "amount": 50,
+      "currency": "RMB",
+      "type": "收入",
+      "category": "零头 🪙",
+      "date": "2026-05-17",
+      "note": "帮cbk代肝鸣潮"
+    },
+    {
+      "name": "二手空气炸锅 x2",
+      "amount": 25,
+      "currency": "USD",
+      "type": "支出",
+      "category": "其他 📦",
+      "date": "2026-05-17",
+      "note": "从学长那买了两个空气炸锅"
+    },
+    {
+      "name": "看电影",
+      "amount": 21.43,
+      "currency": "USD",
+      "type": "支出",
+      "category": "其他 📦",
+      "date": "2026-05-17",
+      "note": "看电影"
+    },
+    {
+      "name": "LeetCode 会员年费",
+      "amount": 180,
+      "currency": "USD",
+      "type": "支出",
+      "category": "其他 📦",
+      "date": "2026-05-16",
+      "note": "LeetCode年费，80/年 ≈ 5/月"
+    },
+    {
+      "name": "Temu 购物",
+      "amount": 86,
+      "currency": "USD",
+      "type": "支出",
+      "category": "电商 🛒",
+      "date": "2026-05-16",
+      "note": "在Temu电商购物，逃不过拼多多😂"
+    },
+    {
+      "name": "硅基流动 AI Token",
+      "amount": 50,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "AI 🤖",
+      "date": "2026-05-16",
+      "note": "硅基流动的AI Token"
+    },
+    {
+      "name": "校医看病",
+      "amount": 10,
+      "currency": "USD",
+      "type": "支出",
+      "category": "其他 📦",
+      "date": "2026-05-16",
+      "note": "在学校校医看病"
+    },
+    {
+      "name": "Mac Mini M4 (16+512)",
+      "amount": 762,
+      "currency": "USD",
+      "type": "支出",
+      "category": "大件 🖥️",
+      "date": "2026-05-16",
+      "note": "心心念念的Mac mini，预计6月10日发货"
+    },
+    {
+      "name": "学姐二手物品",
+      "amount": 45,
+      "currency": "USD",
+      "type": "支出",
+      "category": "其他 📦",
+      "date": "2026-05-14",
+      "note": "在学姐那买了一堆二手物"
+    },
+    {
+      "name": "点外卖",
+      "amount": 63,
+      "currency": "USD",
+      "type": "支出",
+      "category": "饮食 🍜",
+      "date": "2026-05-14",
+      "note": ""
+    },
+    {
+      "name": "话费",
+      "amount": 33.3,
+      "currency": "USD",
+      "type": "支出",
+      "category": "其他 📦",
+      "date": "2026-05-11",
+      "note": "5月话费"
+    },
+    {
+      "name": "点外卖",
+      "amount": 60,
+      "currency": "USD",
+      "type": "支出",
+      "category": "饮食 🍜",
+      "date": "2026-05-10",
+      "note": ""
+    },
+    {
+      "name": "点外卖",
+      "amount": 40,
+      "currency": "USD",
+      "type": "支出",
+      "category": "饮食 🍜",
+      "date": "2026-05-07",
+      "note": ""
+    },
+    {
+      "name": "优衣库买衣服",
+      "amount": 164,
+      "currency": "USD",
+      "type": "支出",
+      "category": "其他 📦",
+      "date": "2026-05-04",
+      "note": "优衣库买衣服"
+    },
+    {
+      "name": "SwitchBot 红外控制器",
+      "amount": 65,
+      "currency": "USD",
+      "type": "支出",
+      "category": "电商 🛒",
+      "date": "2026-05-04",
+      "note": "买了个SwitchBot红外控制器"
+    },
+    {
+      "name": "点外卖",
+      "amount": 43,
+      "currency": "USD",
+      "type": "支出",
+      "category": "饮食 🍜",
+      "date": "2026-05-03",
+      "note": ""
+    },
+    {
+      "name": "桌面充电站+线材",
+      "amount": 147,
+      "currency": "USD",
+      "type": "支出",
+      "category": "电商 🛒",
+      "date": "2026-05-02",
+      "note": "桌面充电站和一些线材"
+    },
+    {
+      "name": "DeepSeek AI Token",
+      "amount": 400,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "AI 🤖",
+      "date": "2026-05-02",
+      "note": "购买DeepSeek的AI Token"
+    },
+    {
+      "name": "点外卖",
+      "amount": 56,
+      "currency": "USD",
+      "type": "支出",
+      "category": "饮食 🍜",
+      "date": "2026-05-01",
+      "note": ""
+    },
+    {
+      "name": "妈妈拨款",
+      "amount": 20000,
+      "currency": "RMB",
+      "type": "收入",
+      "category": "拨款 💸",
+      "date": "2026-04-22",
+      "note": "入账2万"
+    }
+  ]
+}
