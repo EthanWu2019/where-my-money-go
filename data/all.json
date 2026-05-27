@@ -1,7 +1,25 @@
 {
-  "updatedAt": "2026-05-26T20:37:04-05:00",
+  "updatedAt": "2026-05-26T23:10:54-05:00",
   "rate": 6.798706,
   "entries": [
+    {
+      "name": "明日方舟月卡",
+      "amount": 60,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-05-26",
+      "note": ""
+    },
+    {
+      "name": "Auto Export 终身会员",
+      "amount": 25,
+      "currency": "USD",
+      "type": "支出",
+      "category": "AI 🤖",
+      "date": "2026-05-26",
+      "note": "HealthAutoExport 终身会员"
+    },
     {
       "name": "点外卖",
       "amount": 45,
