@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-05-27T23:10:24-05:00",
-  "rate": 6.793906,
+  "updatedAt": "2026-05-28T23:10:46-05:00",
+  "rate": 6.791862,
   "entries": [
+    {
+      "name": "妈妈转账",
+      "amount": 20000,
+      "currency": "RMB",
+      "type": "收入",
+      "category": "拨款 💸",
+      "date": "2026-05-28",
+      "note": "妈妈转了2w"
+    },
     {
       "name": "外卖",
       "amount": 52,
