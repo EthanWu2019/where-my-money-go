@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-05-28T23:10:46-05:00",
-  "rate": 6.791862,
+  "updatedAt": "2026-05-29T23:10:39-05:00",
+  "rate": 6.781722,
   "entries": [
+    {
+      "name": "工资",
+      "amount": 4990,
+      "currency": "RMB",
+      "type": "收入",
+      "category": "工资 💰",
+      "date": "2026-05-29",
+      "note": ""
+    },
     {
       "name": "妈妈转账",
       "amount": 20000,
