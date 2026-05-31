@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-05-29T23:10:39-05:00",
-  "rate": 6.781722,
+  "updatedAt": "2026-05-30T23:10:58-05:00",
+  "rate": 6.786741,
   "entries": [
+    {
+      "name": "可变ND滤镜 K&F Concept 67mm Nano-X",
+      "amount": 73,
+      "currency": "USD",
+      "type": "支出",
+      "category": "电商 🛒",
+      "date": "2026-05-29",
+      "note": ""
+    },
     {
       "name": "工资",
       "amount": 4990,
