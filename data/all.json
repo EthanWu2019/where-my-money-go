@@ -1,7 +1,70 @@
 {
-  "updatedAt": "2026-05-30T23:10:58-05:00",
-  "rate": 6.786741,
+  "updatedAt": "2026-06-01T23:10:21-05:00",
+  "rate": 6.780899,
   "entries": [
+    {
+      "name": "外卖",
+      "amount": 58,
+      "currency": "USD",
+      "type": "支出",
+      "category": "饮食 🍜",
+      "date": "2026-06-01",
+      "note": ""
+    },
+    {
+      "name": "打车",
+      "amount": 8,
+      "currency": "USD",
+      "type": "支出",
+      "category": "其他 📦",
+      "date": "2026-06-01",
+      "note": "回家"
+    },
+    {
+      "name": "打车",
+      "amount": 10,
+      "currency": "USD",
+      "type": "支出",
+      "category": "其他 📦",
+      "date": "2026-06-01",
+      "note": "去电影院"
+    },
+    {
+      "name": "打车",
+      "amount": 9.82,
+      "currency": "USD",
+      "type": "支出",
+      "category": "其他 📦",
+      "date": "2026-06-01",
+      "note": ""
+    },
+    {
+      "name": "抗生素",
+      "amount": 6.2,
+      "currency": "USD",
+      "type": "支出",
+      "category": "其他 📦",
+      "date": "2026-06-01",
+      "note": "5/31晚8:30倒垃圾时鞋被生锈钉子贯穿，次日上午去校医院打破伤风疫苗+开抗生素"
+    },
+    {
+      "name": "崩铁月卡",
+      "amount": 30,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-05-31",
+      "note": ""
+    },
+    {
+      "name": "明日方舟礼包",
+      "amount": 198,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-05-31",
+      "note": ""
+    },
     {
       "name": "可变ND滤镜 K&F Concept 67mm Nano-X",
       "amount": 73,
