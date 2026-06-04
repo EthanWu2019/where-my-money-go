@@ -1,7 +1,34 @@
 {
-  "updatedAt": "2026-06-02T23:11:05-05:00",
-  "rate": 6.778569,
+  "updatedAt": "2026-06-03T23:10:18-05:00",
+  "rate": 6.788285,
   "entries": [
+    {
+      "name": "路由器",
+      "amount": 62,
+      "currency": "USD",
+      "type": "支出",
+      "category": "电商 🛒",
+      "date": "2026-06-03",
+      "note": "新路由器"
+    },
+    {
+      "name": "吃的喝的",
+      "amount": 44.2,
+      "currency": "USD",
+      "type": "支出",
+      "category": "饮食 🍜",
+      "date": "2026-06-03",
+      "note": "矿泉水和小吃"
+    },
+    {
+      "name": "iCloud 订阅",
+      "amount": 9.99,
+      "currency": "USD",
+      "type": "支出",
+      "category": "月扣",
+      "date": "2026-06-03",
+      "note": "iCloud月费，每月3号扣款"
+    },
     {
       "name": "外卖",
       "amount": 58,
