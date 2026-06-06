@@ -31,9 +31,31 @@
                     <span id="update-time">最后同步: --</span>
                     <span id="exchange-rate">实时汇率: --</span>
                 </div>
-                <button id="theme-toggle" class="theme-toggle-btn" title="切换主题">
-                    <span id="theme-icon">☀️</span>
-                </button>
+                <div class="theme-picker">
+                    <button class="theme-picker-btn" id="theme-picker-btn" title="切换风格">🎨</button>
+                    <div class="theme-dropdown" id="theme-dropdown">
+                        <button class="theme-option active" data-theme="violet">
+                            <span class="theme-swatch" style="background: linear-gradient(135deg, #a78bfa, #7c3aed)"></span>
+                            Violet
+                        </button>
+                        <button class="theme-option" data-theme="sharp">
+                            <span class="theme-swatch" style="background: linear-gradient(135deg, #00e5ff, #0a0a0a)"></span>
+                            Sharp
+                        </button>
+                        <button class="theme-option" data-theme="minimal">
+                            <span class="theme-swatch" style="background: linear-gradient(135deg, #fff, #eee)"></span>
+                            Minimal
+                        </button>
+                        <button class="theme-option" data-theme="neon">
+                            <span class="theme-swatch" style="background: linear-gradient(135deg, #ff00ff, #00ffff)"></span>
+                            Neon
+                        </button>
+                        <button class="theme-option" data-theme="sunset">
+                            <span class="theme-swatch" style="background: linear-gradient(135deg, #fbbf24, #f97316)"></span>
+                            Sunset
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </header>

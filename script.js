@@ -32,8 +32,8 @@ const DOM = {
     filterTip: document.getElementById('filter-tip'),
     currentFilter: document.getElementById('current-filter'),
     clearFilter: document.getElementById('clear-filter'),
-    themeToggle: document.getElementById('theme-toggle'),
-    themeIcon: document.getElementById('theme-icon')
+    themePickerBtn: document.getElementById('theme-picker-btn'),
+    themeDropdown: document.getElementById('theme-dropdown')
 };
 
 const MOCK_DATA = {
@@ -64,15 +64,27 @@ async function init() {
 }
 
 function initTheme() {
-    const savedTheme = localStorage.getItem('theme') || 'dark';
-    if (savedTheme === 'light') {
-        document.body.classList.remove('dark-mode');
-        document.body.classList.add('light-mode');
-        DOM.themeIcon.textContent = '🌙';
-    } else {
-        document.body.classList.remove('light-mode');
-        document.body.classList.add('dark-mode');
-        DOM.themeIcon.textContent = '☀️';
+    const savedTheme = localStorage.getItem('theme') || 'violet';
+    applyTheme(savedTheme);
+}
+
+function applyTheme(themeName) {
+    // Remove all theme classes
+    document.body.classList.remove('theme-violet', 'theme-sharp', 'theme-minimal', 'theme-neon', 'theme-sunset');
+    // Remove light-mode/dark-mode (legacy)
+    document.body.classList.remove('light-mode', 'dark-mode');
+    // Add new theme
+    if (themeName !== 'violet') {
+        document.body.classList.add('theme-' + themeName);
+    }
+    localStorage.setItem('theme', themeName);
+    // Update dropdown active state
+    document.querySelectorAll('.theme-option').forEach(opt => {
+        opt.classList.toggle('active', opt.dataset.theme === themeName);
+    });
+    // Re-render chart (colors may have changed)
+    if (state.data) {
+        renderDashboard();
     }
 }
 
@@ -154,20 +166,22 @@ function bindEvents() {
         updateCurrencyIndicator(document.querySelector('.currency-btn.active'));
     });
 
-    DOM.themeToggle.addEventListener('click', () => {
-        const isDark = document.body.classList.contains('dark-mode');
-        if (isDark) {
-            document.body.classList.remove('dark-mode');
-            document.body.classList.add('light-mode');
-            DOM.themeIcon.textContent = '🌙';
-            localStorage.setItem('theme', 'light');
-        } else {
-            document.body.classList.remove('light-mode');
-            document.body.classList.add('dark-mode');
-            DOM.themeIcon.textContent = '☀️';
-            localStorage.setItem('theme', 'dark');
+    DOM.themePickerBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        DOM.themeDropdown.classList.toggle('open');
+    });
+
+    document.querySelectorAll('.theme-option').forEach(opt => {
+        opt.addEventListener('click', (e) => {
+            applyTheme(e.currentTarget.dataset.theme);
+            DOM.themeDropdown.classList.remove('open');
+        });
+    });
+
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.theme-picker')) {
+            DOM.themeDropdown.classList.remove('open');
         }
-        renderDashboard(); 
     });
 
     DOM.btnUSD.addEventListener('click', (e) => changeReportingCurrency('USD', e.target));
@@ -210,7 +224,7 @@ function formatExecutiveCurrency(val) {
 }
 
 function renderExpenseChart(categoryStats) {
-    const isDark = document.body.classList.contains('dark-mode');
+    const isDark = !document.body.classList.contains('theme-minimal');
     const labelColor = isDark ? '#8E8E93' : '#636366';
 
     const expenseCategories = Object.keys(categoryStats).filter(
