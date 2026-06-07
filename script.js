@@ -35,7 +35,15 @@ const DOM = {
     currentFilter: document.getElementById('current-filter'),
     clearFilter: document.getElementById('clear-filter'),
     themePickerBtn: document.getElementById('theme-picker-btn'),
-    themeDropdown: document.getElementById('theme-dropdown')
+    themeDropdown: document.getElementById('theme-dropdown'),
+    incomeTrend: document.querySelector('.summary-card.income .card-trend'),
+    incomeCompare: document.querySelector('.summary-card.income .card-compare'),
+    expenseTrend: document.querySelector('.summary-card.expense .card-trend'),
+    expenseCompare: document.querySelector('.summary-card.expense .card-compare'),
+    netTrend: document.querySelector('.summary-card.net .card-trend'),
+    netCompare: document.querySelector('.summary-card.net .card-compare'),
+    prevBtn: document.getElementById('prev-period'),
+    nextBtn: document.getElementById('next-period')
 };
 
 const MOCK_DATA = {
@@ -133,16 +141,16 @@ async function loadFinancialData() {
 
 function getWeekRange(offset) {
     const now = new Date();
-    // Get Monday of current week
     const day = now.getDay();
     const diffToMonday = day === 0 ? -6 : 1 - day;
-    const monday = new Date(now);
-    monday.setDate(now.getDate() + diffToMonday + offset * 7);
-    monday.setHours(0, 0, 0, 0);
+    const curMonday = new Date(now);
+    curMonday.setDate(now.getDate() + diffToMonday);
+    curMonday.setHours(0, 0, 0, 0);
+    const monday = new Date(curMonday);
+    monday.setDate(curMonday.getDate() + offset * 7);
     const sunday = new Date(monday);
     sunday.setDate(monday.getDate() + 6);
     sunday.setHours(23, 59, 59, 999);
-    // ISO week number (approximate)
     const jan1 = new Date(monday.getFullYear(), 0, 1);
     const weekNum = Math.ceil(((monday - jan1) / 86400000 + jan1.getDay() + 1) / 7);
     return {
@@ -156,14 +164,15 @@ function getWeekRange(offset) {
 
 function getMonthRange(offset) {
     const now = new Date();
-    const year = now.getFullYear();
     const month = now.getMonth() + offset;
+    const year = now.getFullYear() + Math.floor(month / 12);
+    const realMonth = ((month % 12) + 12) % 12;
     const firstDay = new Date(year, month, 1);
     const lastDay = new Date(year, month + 1, 0);
     return {
         label: `${firstDay.getFullYear()}年 ${String(firstDay.getMonth()+1).padStart(2,'0')}月`,
-        startStr: firstDay.toISOString().slice(0, 10),
-        endStr: lastDay.toISOString().slice(0, 10),
+        startStr: `${firstDay.getFullYear()}-${String(firstDay.getMonth()+1).padStart(2,'0')}-01`,
+        endStr: `${lastDay.getFullYear()}-${String(lastDay.getMonth()+1).padStart(2,'0')}-${String(lastDay.getDate()).padStart(2,'0')}`,
         prefix: `${firstDay.getFullYear()}-${String(firstDay.getMonth()+1).padStart(2,'0')}`,
     };
 }
@@ -175,11 +184,29 @@ function processDataView() {
         const m = getMonthRange(state.monthOffset);
         DOM.periodLabel.textContent = m.label;
         entries = entries.filter(e => e.date.startsWith(m.prefix));
+        const allDates = state.allData.entries.map(e => e.date).sort();
+        const earliest = new Date(allDates[0] + 'T00:00:00');
+        const curMonth = new Date().getMonth() + new Date().getFullYear() * 12;
+        const earlyMonth = earliest.getMonth() + earliest.getFullYear() * 12;
+        const earliestOffset = earlyMonth - curMonth;
+        DOM.prevBtn.disabled = state.monthOffset <= earliestOffset;
+        DOM.nextBtn.disabled = state.monthOffset >= 0;
     } else if (state.view === 'weekly') {
         DOM.periodNav.style.display = 'flex';
         const w = getWeekRange(state.weekOffset);
         DOM.periodLabel.textContent = w.label;
         entries = entries.filter(e => e.date >= w.startStr && e.date <= w.endStr);
+        const allDates = state.allData.entries.map(e => e.date).sort();
+        const earliest = new Date(allDates[0] + 'T00:00:00');
+        const now = new Date();
+        const eDay = earliest.getDay();
+        const eMon = new Date(earliest); eMon.setDate(earliest.getDate() - (eDay === 0 ? 6 : eDay - 1));
+        const nDay = now.getDay();
+        const nMon = new Date(now); nMon.setDate(now.getDate() - (nDay === 0 ? 6 : nDay - 1));
+        const toWN = (d) => { const j1 = new Date(d.getFullYear(), 0, 1); return Math.ceil(((d - j1) / 86400000 + j1.getDay() + 1) / 7) + d.getFullYear() * 53; };
+        const earliestWkOffset = toWN(eMon) - toWN(nMon);
+        DOM.prevBtn.disabled = state.weekOffset <= earliestWkOffset;
+        DOM.nextBtn.disabled = state.weekOffset >= 0;
     } else {
         DOM.periodNav.style.display = 'none';
     }
@@ -352,6 +379,23 @@ function renderExpenseChart(categoryStats) {
     });
 }
 
+function updateTrend(cardEl, current, prev, label) {
+    const trendEl = cardEl.querySelector('.card-trend');
+    const compareEl = cardEl.querySelector('.card-compare');
+    if (!prev || prev === 0) {
+        trendEl.style.display = 'none';
+        compareEl.style.display = 'none';
+        return;
+    }
+    const pct = ((current - prev) / Math.abs(prev) * 100);
+    const arrow = pct >= 0 ? '↑' : '↓';
+    trendEl.textContent = `${arrow}`;
+    trendEl.style.display = '';
+    trendEl.style.color = pct >= 0 ? '#34D399' : '#FB7185';
+    compareEl.textContent = `${pct >= 0 ? '+' : ''}${pct.toFixed(1)}% ${label}`;
+    compareEl.style.display = '';
+}
+
 function renderDashboard() {
     if (!state.data) return;
     let entries = state.data.entries;
@@ -385,6 +429,31 @@ function renderDashboard() {
     let net = income - expense;
     DOM.netBalance.textContent = formatExecutiveCurrency(net);
     DOM.netBalance.parentElement.classList.toggle('negative', net < 0);
+
+    // Update summary card trend/compare based on view
+    const summaryCards = document.querySelectorAll('.summary-card');
+    if (state.view === 'all') {
+        summaryCards[0].querySelector('.card-trend').style.display = 'none';
+        summaryCards[0].querySelector('.card-compare').style.display = 'none';
+        summaryCards[2].querySelector('.card-trend').style.display = 'none';
+        summaryCards[2].querySelector('.card-compare').style.display = 'none';
+    } else if (state.view === 'weekly') {
+        const prevW = getWeekRange(state.weekOffset - 1);
+        const prevEntries = state.allData.entries.filter(e => e.date >= prevW.startStr && e.date <= prevW.endStr);
+        let prevInc = 0, prevExp = 0;
+        prevEntries.forEach(i => { let v = calcValue(i.amount, i.currency); if (i.type === '收入') prevInc += v; else prevExp += v; });
+        updateTrend(summaryCards[0], income, prevInc, 'vs last week');
+        updateTrend(summaryCards[1], expense, prevExp, 'vs last week');
+        updateTrend(summaryCards[2], net, prevInc - prevExp, 'vs last week');
+    } else if (state.view === 'monthly') {
+        const prevM = getMonthRange(state.monthOffset - 1);
+        const prevEntries = state.allData.entries.filter(e => e.date.startsWith(prevM.prefix));
+        let prevInc = 0, prevExp = 0;
+        prevEntries.forEach(i => { let v = calcValue(i.amount, i.currency); if (i.type === '收入') prevInc += v; else prevExp += v; });
+        updateTrend(summaryCards[0], income, prevInc, 'vs last month');
+        updateTrend(summaryCards[1], expense, prevExp, 'vs last month');
+        updateTrend(summaryCards[2], net, prevInc - prevExp, 'vs last month');
+    }
 
     renderExpenseChart(categoryStats);
 

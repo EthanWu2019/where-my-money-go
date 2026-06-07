@@ -901,6 +901,12 @@ tbody tr:last-child td {
     background: transparent;
 }
 
+.secondary-btn:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
 /* ══════════════════════════════════════
    ANIMATIONS
    ══════════════════════════════════════ */
