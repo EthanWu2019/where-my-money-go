@@ -382,18 +382,23 @@ function renderExpenseChart(categoryStats) {
 function updateTrend(cardEl, current, prev, label) {
     const trendEl = cardEl.querySelector('.card-trend');
     const compareEl = cardEl.querySelector('.card-compare');
+    if (!trendEl && !compareEl) return;
     if (!prev || prev === 0) {
-        trendEl.style.display = 'none';
-        compareEl.style.display = 'none';
+        if (trendEl) trendEl.style.display = 'none';
+        if (compareEl) compareEl.style.display = 'none';
         return;
     }
     const pct = ((current - prev) / Math.abs(prev) * 100);
     const arrow = pct >= 0 ? '↑' : '↓';
-    trendEl.textContent = `${arrow}`;
-    trendEl.style.display = '';
-    trendEl.style.color = pct >= 0 ? '#34D399' : '#FB7185';
-    compareEl.textContent = `${pct >= 0 ? '+' : ''}${pct.toFixed(1)}% ${label}`;
-    compareEl.style.display = '';
+    if (trendEl) {
+        trendEl.textContent = `${arrow}`;
+        trendEl.style.display = '';
+        trendEl.style.color = pct >= 0 ? '#34D399' : '#FB7185';
+    }
+    if (compareEl) {
+        compareEl.textContent = `${pct >= 0 ? '+' : ''}${pct.toFixed(1)}% ${label}`;
+        compareEl.style.display = '';
+    }
 }
 
 function renderDashboard() {
@@ -435,6 +440,10 @@ function renderDashboard() {
     if (state.view === 'all') {
         summaryCards[0].querySelector('.card-trend').style.display = 'none';
         summaryCards[0].querySelector('.card-compare').style.display = 'none';
+        if (income > 0) {
+            const expPct = (expense / income * 100).toFixed(0);
+            summaryCards[1].querySelector('.card-compare').textContent = `${expPct}% of income`;
+        }
         summaryCards[2].querySelector('.card-trend').style.display = 'none';
         summaryCards[2].querySelector('.card-compare').style.display = 'none';
     } else if (state.view === 'weekly') {
