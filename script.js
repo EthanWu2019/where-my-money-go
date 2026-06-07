@@ -5,6 +5,8 @@ const state = {
     data: null,
     allData: null,
     activeCategory: null,
+    weekOffset: 0,
+    monthOffset: 0,
 };
 
 const CATEGORY_ORDER = [
@@ -129,16 +131,55 @@ async function loadFinancialData() {
     }
 }
 
+function getWeekRange(offset) {
+    const now = new Date();
+    // Get Monday of current week
+    const day = now.getDay();
+    const diffToMonday = day === 0 ? -6 : 1 - day;
+    const monday = new Date(now);
+    monday.setDate(now.getDate() + diffToMonday + offset * 7);
+    monday.setHours(0, 0, 0, 0);
+    const sunday = new Date(monday);
+    sunday.setDate(monday.getDate() + 6);
+    sunday.setHours(23, 59, 59, 999);
+    // ISO week number (approximate)
+    const jan1 = new Date(monday.getFullYear(), 0, 1);
+    const weekNum = Math.ceil(((monday - jan1) / 86400000 + jan1.getDay() + 1) / 7);
+    return {
+        start: monday,
+        end: sunday,
+        label: `W${weekNum}周 (${String(monday.getMonth()+1).padStart(2,'0')}.${String(monday.getDate()).padStart(2,'0')}-${String(sunday.getMonth()+1).padStart(2,'0')}.${String(sunday.getDate()).padStart(2,'0')})`,
+        startStr: monday.toISOString().slice(0, 10),
+        endStr: sunday.toISOString().slice(0, 10),
+    };
+}
+
+function getMonthRange(offset) {
+    const now = new Date();
+    const year = now.getFullYear();
+    const month = now.getMonth() + offset;
+    const firstDay = new Date(year, month, 1);
+    const lastDay = new Date(year, month + 1, 0);
+    return {
+        label: `${firstDay.getFullYear()}年 ${String(firstDay.getMonth()+1).padStart(2,'0')}月`,
+        startStr: firstDay.toISOString().slice(0, 10),
+        endStr: lastDay.toISOString().slice(0, 10),
+        prefix: `${firstDay.getFullYear()}-${String(firstDay.getMonth()+1).padStart(2,'0')}`,
+    };
+}
+
 function processDataView() {
     let entries = [...state.allData.entries];
     if (state.view === 'monthly') {
         DOM.periodNav.style.display = 'flex';
-        DOM.periodLabel.textContent = "2026年 05月";
-        entries = entries.filter(e => e.date.startsWith('2026-05'));
+        const m = getMonthRange(state.monthOffset);
+        DOM.periodLabel.textContent = m.label;
+        entries = entries.filter(e => e.date.startsWith(m.prefix));
     } else if (state.view === 'weekly') {
         DOM.periodNav.style.display = 'flex';
-        DOM.periodLabel.textContent = "W20周 (05.11-05.17)";
-        entries = entries.filter(e => e.date >= '2026-05-11' && e.date <= '2026-05-17');
+        const w = getWeekRange(state.weekOffset);
+        DOM.periodLabel.textContent = w.label;
+        entries = entries.filter(e => e.date >= w.startStr && e.date <= w.endStr);
     } else {
         DOM.periodNav.style.display = 'none';
     }
@@ -193,8 +234,19 @@ function bindEvents() {
             e.target.classList.add('active');
             updateTabIndicator(e.target);
             state.view = e.target.dataset.view;
+            state.weekOffset = 0;
+            state.monthOffset = 0;
             processDataView();
         });
+    });
+
+    document.getElementById('prev-period').addEventListener('click', () => {
+        if (state.view === 'weekly') { state.weekOffset--; processDataView(); }
+        else if (state.view === 'monthly') { state.monthOffset--; processDataView(); }
+    });
+    document.getElementById('next-period').addEventListener('click', () => {
+        if (state.view === 'weekly') { state.weekOffset++; processDataView(); }
+        else if (state.view === 'monthly') { state.monthOffset++; processDataView(); }
     });
 
     DOM.clearFilter.addEventListener('click', () => {
