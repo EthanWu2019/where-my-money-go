@@ -1,7 +1,52 @@
 {
-  "updatedAt": "2026-06-06T23:11:09-05:00",
-  "rate": 6.791621,
+  "updatedAt": "2026-06-07T23:01:25-05:00",
+  "rate": 6.793402,
   "entries": [
+    {
+      "name": "鸣潮礼包",
+      "amount": 98,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-06-07",
+      "note": "鸣潮"
+    },
+    {
+      "name": "鸣潮礼包",
+      "amount": 128,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-06-07",
+      "note": "鸣潮"
+    },
+    {
+      "name": "鸣潮礼包",
+      "amount": 198,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-06-07",
+      "note": "鸣潮"
+    },
+    {
+      "name": "鸣潮礼包",
+      "amount": 68,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-06-07",
+      "note": "鸣潮"
+    },
+    {
+      "name": "鸣潮礼包",
+      "amount": 68,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-06-07",
+      "note": "鸣潮"
+    },
     {
       "name": "YouTube会员年费",
       "amount": 288,
