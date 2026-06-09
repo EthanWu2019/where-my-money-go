@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-06-07T23:10:54-05:00",
-  "rate": 6.793402,
+  "updatedAt": "2026-06-08T23:10:08-05:00",
+  "rate": 6.794828,
   "entries": [
+    {
+      "name": "CVS日用品",
+      "amount": 39,
+      "currency": "USD",
+      "type": "支出",
+      "category": "其他 📦",
+      "date": "2026-06-08",
+      "note": "CVS日常用品"
+    },
     {
       "name": "鸣潮礼包",
       "amount": 98,
