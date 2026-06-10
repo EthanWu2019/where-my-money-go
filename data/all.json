@@ -1,7 +1,34 @@
 {
-  "updatedAt": "2026-06-08T23:10:08-05:00",
-  "rate": 6.794828,
+  "updatedAt": "2026-06-09T23:10:52-05:00",
+  "rate": 6.785295,
   "entries": [
+    {
+      "name": "外卖",
+      "amount": 55,
+      "currency": "USD",
+      "type": "支出",
+      "category": "饮食 🍜",
+      "date": "2026-06-08",
+      "note": "3份买一赠一盒饭(芥兰牛/火爆大头菜/芝麻鸡)，共6份"
+    },
+    {
+      "name": "鸣潮礼包",
+      "amount": 128,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-06-08",
+      "note": ""
+    },
+    {
+      "name": "鸣潮礼包",
+      "amount": 30,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-06-08",
+      "note": ""
+    },
     {
       "name": "CVS日用品",
       "amount": 39,
