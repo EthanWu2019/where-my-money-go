@@ -7,6 +7,8 @@ const state = {
     activeCategory: null,
     weekOffset: 0,
     monthOffset: 0,
+    page: 0,
+    pageSize: 10,
 };
 
 const CATEGORY_ORDER = [
@@ -263,6 +265,7 @@ function bindEvents() {
             state.view = e.target.dataset.view;
             state.weekOffset = 0;
             state.monthOffset = 0;
+            state.page = 0;
             processDataView();
         });
     });
@@ -278,6 +281,7 @@ function bindEvents() {
 
     DOM.clearFilter.addEventListener('click', () => {
         state.activeCategory = null;
+        state.page = 0;
         renderDashboard();
     });
 }
@@ -485,13 +489,19 @@ function renderDashboard() {
         `;
         card.addEventListener('click', () => {
             state.activeCategory = state.activeCategory === cat ? null : cat;
+            state.page = 0;
             renderDashboard();
         });
         DOM.categoryContainer.appendChild(card);
     });
 
     DOM.recordsBody.innerHTML = '';
-    entries.forEach(item => {
+    const totalPages = Math.ceil(entries.length / state.pageSize);
+    if (state.page >= totalPages) state.page = Math.max(0, totalPages - 1);
+    const start = state.page * state.pageSize;
+    const pageEntries = entries.slice(start, start + state.pageSize);
+
+    pageEntries.forEach(item => {
         let val = calcValue(item.amount, item.currency);
         let tr = document.createElement('tr');
         let colorClass = item.type === '收入' ? 'cat-income' : 'cat-expense';
@@ -505,6 +515,43 @@ function renderDashboard() {
         `;
         DOM.recordsBody.appendChild(tr);
     });
+
+    // Pagination controls
+    renderPagination(entries.length, totalPages);
+}
+
+function renderPagination(total, totalPages) {
+    let container = document.getElementById('pagination-container');
+    if (!container) {
+        container = document.createElement('div');
+        container.id = 'pagination-container';
+        container.className = 'pagination-bar';
+        document.querySelector('.table-wrapper').after(container);
+    }
+
+    if (totalPages <= 1) {
+        container.innerHTML = total > 0 ? `<span class="pagination-info">共 ${total} 条记录</span>` : '';
+        return;
+    }
+
+    const start = state.page * state.pageSize + 1;
+    const end = Math.min((state.page + 1) * state.pageSize, total);
+
+    container.innerHTML = `
+        <span class="pagination-info">第 ${start}-${end} 条，共 ${total} 条</span>
+        <div class="pagination-controls">
+            <button class="pagination-btn" id="page-first" ${state.page === 0 ? 'disabled' : ''} title="首页">«</button>
+            <button class="pagination-btn" id="page-prev" ${state.page === 0 ? 'disabled' : ''} title="上一页">‹</button>
+            <span class="pagination-page">${state.page + 1} / ${totalPages}</span>
+            <button class="pagination-btn" id="page-next" ${state.page >= totalPages - 1 ? 'disabled' : ''} title="下一页">›</button>
+            <button class="pagination-btn" id="page-last" ${state.page >= totalPages - 1 ? 'disabled' : ''} title="末页">»</button>
+        </div>
+    `;
+
+    document.getElementById('page-first').addEventListener('click', () => { state.page = 0; renderDashboard(); });
+    document.getElementById('page-prev').addEventListener('click', () => { state.page = Math.max(0, state.page - 1); renderDashboard(); });
+    document.getElementById('page-next').addEventListener('click', () => { state.page = Math.min(totalPages - 1, state.page + 1); renderDashboard(); });
+    document.getElementById('page-last').addEventListener('click', () => { state.page = totalPages - 1; renderDashboard(); });
 }
 
 document.addEventListener('DOMContentLoaded', init);

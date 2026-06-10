@@ -864,6 +864,81 @@ tbody tr:last-child td {
 }
 
 /* ══════════════════════════════════════
+   PAGINATION
+   ══════════════════════════════════════ */
+.pagination-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+    margin-top: -1px;
+    border: 1px solid var(--border-card);
+    border-top: none;
+    background: var(--bg-card);
+    border-radius: 0 0 var(--radius-xl) var(--radius-xl);
+}
+
+.table-wrapper:has(+ .pagination-bar) {
+    border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+    border-bottom: none;
+}
+
+.pagination-info {
+    font-size: 12px;
+    color: var(--text-tertiary);
+    font-weight: 500;
+}
+
+.pagination-controls {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.pagination-btn {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border-card);
+    border-radius: var(--radius-sm);
+    background: transparent;
+    color: var(--text-secondary);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s ease-out;
+    line-height: 1;
+}
+
+.pagination-btn:hover:not(:disabled) {
+    background: var(--bg-card-hover);
+    border-color: var(--border-hover);
+    color: var(--accent-light);
+    transform: translateY(-1px);
+}
+
+.pagination-btn:active:not(:disabled) {
+    transform: translateY(0) scale(0.92);
+}
+
+.pagination-btn:disabled {
+    opacity: 0.25;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.pagination-page {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-primary);
+    min-width: 56px;
+    text-align: center;
+    font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', monospace;
+}
+
+/* ══════════════════════════════════════
    PERIOD NAVIGATION
    ══════════════════════════════════════ */
 .period-label {
