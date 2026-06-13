@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-11T23:11:10-05:00",
-  "rate": 6.787632,
+  "updatedAt": "2026-06-12T23:10:52-05:00",
+  "rate": 6.776548,
   "entries": [
     {
       "name": "Apple Care One",
@@ -10,6 +10,60 @@
       "category": "月扣",
       "date": "2026-06-10",
       "note": "Apple Care月度扣款，每月10号扣款"
+    },
+    {
+      "name": "鸣潮",
+      "amount": 648,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-06-08",
+      "note": "洛瑟拉：30歪+70up+70武器+70歪+20up+70歪+换1链+10连up+70up+50歪+70up+换1链"
+    },
+    {
+      "name": "鸣潮",
+      "amount": 1296,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-06-08",
+      "note": "洛瑟拉：30歪+70up+70武器+70歪+20up+70歪+换1链+10连up+70up+50歪+70up+换1链"
+    },
+    {
+      "name": "鸣潮",
+      "amount": 1296,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-06-08",
+      "note": "洛瑟拉：30歪+70up+70武器+70歪+20up+70歪+换1链+10连up+70up+50歪+70up+换1链"
+    },
+    {
+      "name": "鸣潮",
+      "amount": 3240,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-06-08",
+      "note": "洛瑟拉：30歪+70up+70武器+70歪+20up+70歪+换1链+10连up+70up+50歪+70up+换1链"
+    },
+    {
+      "name": "外卖",
+      "amount": 50,
+      "currency": "USD",
+      "type": "支出",
+      "category": "饮食 🍜",
+      "date": "2026-06-08",
+      "note": ""
+    },
+    {
+      "name": "Weee生鲜",
+      "amount": 130,
+      "currency": "USD",
+      "type": "支出",
+      "category": "饮食 🍜",
+      "date": "2026-06-08",
+      "note": "Weee亚超买生鲜"
     },
     {
       "name": "话费",
