@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-12T23:10:52-05:00",
-  "rate": 6.776548,
+  "updatedAt": "2026-06-13T23:10:37-05:00",
+  "rate": 6.781714,
   "entries": [
     {
       "name": "Apple Care One",
@@ -10,6 +10,15 @@
       "category": "月扣",
       "date": "2026-06-10",
       "note": "Apple Care月度扣款，每月10号扣款"
+    },
+    {
+      "name": "外卖",
+      "amount": 60,
+      "currency": "USD",
+      "type": "支出",
+      "category": "饮食 🍜",
+      "date": "2026-06-08",
+      "note": ""
     },
     {
       "name": "鸣潮",
