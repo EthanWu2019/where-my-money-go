@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-14T23:10:39-05:00",
-  "rate": 6.769141,
+  "updatedAt": "2026-06-15T23:10:30-05:00",
+  "rate": 6.771909,
   "entries": [
     {
       "name": "Apple Care One",
@@ -10,6 +10,15 @@
       "category": "月扣",
       "date": "2026-06-10",
       "note": "Apple Care月度扣款，每月10号扣款"
+    },
+    {
+      "name": "可乐爆米花",
+      "amount": 13.68,
+      "currency": "USD",
+      "type": "支出",
+      "category": "其他 📦",
+      "date": "2026-06-08",
+      "note": "AMC看电影时的零食"
     },
     {
       "name": "AMC会员费",
