@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-15T23:10:30-05:00",
-  "rate": 6.771909,
+  "updatedAt": "2026-06-16T23:10:23-05:00",
+  "rate": 6.769763,
   "entries": [
     {
       "name": "Apple Care One",
@@ -10,6 +10,24 @@
       "category": "月扣",
       "date": "2026-06-10",
       "note": "Apple Care月度扣款，每月10号扣款"
+    },
+    {
+      "name": "打车",
+      "amount": 26,
+      "currency": "USD",
+      "type": "支出",
+      "category": "其他 📦",
+      "date": "2026-06-08",
+      "note": "电影院往返"
+    },
+    {
+      "name": "亚马逊购物",
+      "amount": 50,
+      "currency": "USD",
+      "type": "支出",
+      "category": "电商 🛒",
+      "date": "2026-06-08",
+      "note": ""
     },
     {
       "name": "可乐爆米花",
