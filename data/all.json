@@ -1,7 +1,43 @@
 {
-  "updatedAt": "2026-06-17T23:10:54-05:00",
-  "rate": 6.774194,
+  "updatedAt": "2026-06-18T23:10:57-05:00",
+  "rate": 6.783567,
   "entries": [
+    {
+      "name": "打车剪头发",
+      "amount": 11,
+      "currency": "USD",
+      "type": "支出",
+      "category": "其他 📦",
+      "date": "2026-06-18",
+      "note": ""
+    },
+    {
+      "name": "点外卖",
+      "amount": 39,
+      "currency": "USD",
+      "type": "支出",
+      "category": "饮食 🍜",
+      "date": "2026-06-18",
+      "note": ""
+    },
+    {
+      "name": "打车回家",
+      "amount": 14,
+      "currency": "USD",
+      "type": "支出",
+      "category": "其他 📦",
+      "date": "2026-06-18",
+      "note": ""
+    },
+    {
+      "name": "剪头发",
+      "amount": 38,
+      "currency": "USD",
+      "type": "支出",
+      "category": "其他 📦",
+      "date": "2026-06-18",
+      "note": ""
+    },
     {
       "name": "Apple Care One",
       "amount": 25.98,
@@ -10,6 +46,15 @@
       "category": "月扣",
       "date": "2026-06-10",
       "note": "Apple Care月度扣款，每月10号扣款"
+    },
+    {
+      "name": "打车剪头发",
+      "amount": 11,
+      "currency": "USD",
+      "type": "支出",
+      "category": "其他 📦",
+      "date": "2026-06-08",
+      "note": ""
     },
     {
       "name": "打车",
