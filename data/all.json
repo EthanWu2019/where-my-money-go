@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-06-18T23:10:57-05:00",
-  "rate": 6.783567,
+  "updatedAt": "2026-06-19T23:10:28-05:00",
+  "rate": 6.784364,
   "entries": [
+    {
+      "name": "原神月卡",
+      "amount": 30,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-06-19",
+      "note": ""
+    },
     {
       "name": "打车剪头发",
       "amount": 11,
