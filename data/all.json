@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-06-21T23:10:50-05:00",
-  "rate": 6.789004,
+  "updatedAt": "2026-06-22T23:11:08-05:00",
+  "rate": 6.786919,
   "entries": [
+    {
+      "name": "外卖",
+      "amount": 52,
+      "currency": "USD",
+      "type": "支出",
+      "category": "饮食 🍜",
+      "date": "2026-06-22",
+      "note": ""
+    },
     {
       "name": "Shake Shack (Uber Eats)",
       "amount": 51,
