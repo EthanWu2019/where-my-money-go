@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-06-23T23:10:17-05:00",
-  "rate": 6.800403,
+  "updatedAt": "2026-06-24T23:11:00-05:00",
+  "rate": 6.81767,
   "entries": [
+    {
+      "name": "MiniMax 会员费",
+      "amount": 200,
+      "currency": "USD",
+      "type": "支出",
+      "category": "AI 🤖",
+      "date": "2026-06-24",
+      "note": "一年会员"
+    },
     {
       "name": "买菜",
       "amount": 88,
