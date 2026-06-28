@@ -1,7 +1,25 @@
 {
-  "updatedAt": "2026-06-25T23:10:27-05:00",
-  "rate": 6.808596,
+  "updatedAt": "2026-06-27T23:10:09-05:00",
+  "rate": 6.81116,
   "entries": [
+    {
+      "name": "买菜/生鲜",
+      "amount": 160,
+      "currency": "USD",
+      "type": "支出",
+      "category": "饮食 🍜",
+      "date": "2026-06-26",
+      "note": ""
+    },
+    {
+      "name": "外卖",
+      "amount": 38,
+      "currency": "USD",
+      "type": "支出",
+      "category": "饮食 🍜",
+      "date": "2026-06-26",
+      "note": ""
+    },
     {
       "name": "MiniMax 会员费",
       "amount": 200,
