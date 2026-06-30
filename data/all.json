@@ -1,7 +1,43 @@
 {
-  "updatedAt": "2026-06-28T23:10:35-05:00",
-  "rate": 6.803731,
+  "updatedAt": "2026-06-29T23:10:13-05:00",
+  "rate": 6.804421,
   "entries": [
+    {
+      "name": "Mac Dock Station",
+      "amount": 1399,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "大件 🖥️",
+      "date": "2026-06-29",
+      "note": "让桃帮买"
+    },
+    {
+      "name": "鸣潮礼包",
+      "amount": 68,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-06-29",
+      "note": ""
+    },
+    {
+      "name": "鸣潮礼包",
+      "amount": 68,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-06-29",
+      "note": ""
+    },
+    {
+      "name": "鸣潮礼包",
+      "amount": 198,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-06-29",
+      "note": ""
+    },
     {
       "name": "买菜/生鲜",
       "amount": 160,
