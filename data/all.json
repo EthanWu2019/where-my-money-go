@@ -1,7 +1,34 @@
 {
-  "updatedAt": "2026-06-29T23:10:13-05:00",
-  "rate": 6.804421,
+  "updatedAt": "2026-06-30T23:10:45-05:00",
+  "rate": 6.796501,
   "entries": [
+    {
+      "name": "原神月卡",
+      "amount": 30,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-06-30",
+      "note": ""
+    },
+    {
+      "name": "工资",
+      "amount": 4990,
+      "currency": "RMB",
+      "type": "收入",
+      "category": "工资 💰",
+      "date": "2026-06-30",
+      "note": ""
+    },
+    {
+      "name": "原神大月卡",
+      "amount": 128,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-06-30",
+      "note": ""
+    },
     {
       "name": "Mac Dock Station",
       "amount": 1399,
