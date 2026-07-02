@@ -1,7 +1,25 @@
 {
-  "updatedAt": "2026-06-30T23:10:45-05:00",
-  "rate": 6.796501,
+  "updatedAt": "2026-07-01T23:10:12-05:00",
+  "rate": 6.801054,
   "entries": [
+    {
+      "name": "外卖",
+      "amount": 60,
+      "currency": "USD",
+      "type": "支出",
+      "category": "饮食 🍜",
+      "date": "2026-07-01",
+      "note": ""
+    },
+    {
+      "name": "妈妈打钱",
+      "amount": 20000,
+      "currency": "RMB",
+      "type": "收入",
+      "category": "拨款 💸",
+      "date": "2026-07-01",
+      "note": ""
+    },
     {
       "name": "原神月卡",
       "amount": 30,
