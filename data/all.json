@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-07-02T23:10:06-05:00",
-  "rate": 6.796274,
+  "updatedAt": "2026-07-03T23:10:36-05:00",
+  "rate": 6.790713,
   "entries": [
+    {
+      "name": "iCloud 订阅",
+      "amount": 9.99,
+      "currency": "USD",
+      "type": "支出",
+      "category": "月扣",
+      "date": "2026-07-03",
+      "note": "iCloud月费，每月3号扣款"
+    },
     {
       "name": "原神月卡",
       "amount": 30,
@@ -154,6 +163,15 @@
       "category": "饮食 🍜",
       "date": "2026-06-22",
       "note": ""
+    },
+    {
+      "name": "父亲节礼物",
+      "amount": 526,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "其他 📦",
+      "date": "2026-06-21",
+      "note": "父亲节礼物"
     },
     {
       "name": "Shake Shack (Uber Eats)",
@@ -883,6 +901,15 @@
       "category": "其他 📦",
       "date": "2026-05-11",
       "note": "5月话费"
+    },
+    {
+      "name": "母亲节礼物",
+      "amount": 480,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "其他 📦",
+      "date": "2026-05-10",
+      "note": "母亲节礼物"
     },
     {
       "name": "点外卖",
