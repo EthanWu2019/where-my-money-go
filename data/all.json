@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-07-04T23:10:32-05:00",
-  "rate": 6.795288,
+  "updatedAt": "2026-07-05T23:10:52-05:00",
+  "rate": 6.785482,
   "entries": [
+    {
+      "name": "外卖",
+      "amount": 39,
+      "currency": "USD",
+      "type": "支出",
+      "category": "饮食 🍜",
+      "date": "2026-07-04",
+      "note": ""
+    },
     {
       "name": "iCloud 订阅",
       "amount": 9.99,
