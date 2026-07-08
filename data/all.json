@@ -1,7 +1,34 @@
 {
-  "updatedAt": "2026-07-06T23:10:16-05:00",
-  "rate": 6.801784,
+  "updatedAt": "2026-07-07T23:10:15-05:00",
+  "rate": 6.801883,
   "entries": [
+    {
+      "name": "外卖",
+      "amount": 37,
+      "currency": "USD",
+      "type": "支出",
+      "category": "饮食 🍜",
+      "date": "2026-07-07",
+      "note": ""
+    },
+    {
+      "name": "B站B币充值",
+      "amount": 50,
+      "currency": "USD",
+      "type": "支出",
+      "category": "其他 📦",
+      "date": "2026-07-07",
+      "note": ""
+    },
+    {
+      "name": "饮料生鲜鸡蛋面包培根",
+      "amount": 70,
+      "currency": "USD",
+      "type": "支出",
+      "category": "饮食 🍜",
+      "date": "2026-07-07",
+      "note": ""
+    },
     {
       "name": "外卖",
       "amount": 39,
