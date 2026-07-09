@@ -1,7 +1,34 @@
 {
-  "updatedAt": "2026-07-07T23:10:15-05:00",
-  "rate": 6.801883,
+  "updatedAt": "2026-07-08T23:10:08-05:00",
+  "rate": 6.810223,
   "entries": [
+    {
+      "name": "AMC Stubs A-List 月度会员费",
+      "amount": 22,
+      "currency": "USD",
+      "type": "支出",
+      "category": "月扣",
+      "date": "2026-07-08",
+      "note": "AMC Stubs A-List 月度扣款（之前写入用了英文 key，已修正）"
+    },
+    {
+      "name": "小云雀视频AI包年订阅",
+      "amount": 1200,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "AI 🤖",
+      "date": "2026-07-08",
+      "note": "小云雀视频 AI 包年订阅"
+    },
+    {
+      "name": "洗护用品 (纸巾/擦脸巾/沐浴露/洗发露)",
+      "amount": 180,
+      "currency": "USD",
+      "type": "支出",
+      "category": "其他 📦",
+      "date": "2026-07-08",
+      "note": "日用品 — 洗护套装 + 纸巾 + 擦脸巾"
+    },
     {
       "name": "外卖",
       "amount": 37,
