@@ -1,7 +1,106 @@
 {
-  "updatedAt": "2026-07-08T23:10:08-05:00",
-  "rate": 6.810223,
+  "updatedAt": "2026-07-09T23:10:31-05:00",
+  "rate": 6.80023,
   "entries": [
+    {
+      "name": "鸣潮礼包",
+      "amount": 48,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-07-08",
+      "note": "鸣潮 (¥48)"
+    },
+    {
+      "name": "鸣潮礼包",
+      "amount": 648,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-07-08",
+      "note": "鸣潮 礼包 (¥648)"
+    },
+    {
+      "name": "鸣潮礼包",
+      "amount": 198,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-07-08",
+      "note": "鸣潮 礼包 (¥198)"
+    },
+    {
+      "name": "鸣潮礼包",
+      "amount": 68,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-07-08",
+      "note": "鸣潮 礼包 (¥68)"
+    },
+    {
+      "name": "鸣潮礼包",
+      "amount": 68,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-07-08",
+      "note": "鸣潮 礼包 3 (¥68)"
+    },
+    {
+      "name": "鸣潮礼包",
+      "amount": 198,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-07-08",
+      "note": "鸣潮 礼包 2 (¥198)"
+    },
+    {
+      "name": "鸣潮礼包",
+      "amount": 128,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-07-08",
+      "note": "鸣潮 礼包 1 (¥128)"
+    },
+    {
+      "name": "外卖",
+      "amount": 45,
+      "currency": "USD",
+      "type": "支出",
+      "category": "饮食 🍜",
+      "date": "2026-07-08",
+      "note": "外卖"
+    },
+    {
+      "name": "异环小礼包",
+      "amount": 24,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-07-08",
+      "note": "异环 小礼包"
+    },
+    {
+      "name": "异环月卡",
+      "amount": 30,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-07-08",
+      "note": "异环 月卡"
+    },
+    {
+      "name": "异环大月卡",
+      "amount": 128,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-07-08",
+      "note": "异环 大月卡"
+    },
     {
       "name": "AMC Stubs A-List 月度会员费",
       "amount": 22,
