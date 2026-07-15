@@ -1,7 +1,52 @@
 {
-  "updatedAt": "2026-07-13T23:10:57-05:00",
-  "rate": 6.78828,
+  "updatedAt": "2026-07-14T23:10:11-05:00",
+  "rate": 6.782028,
   "entries": [
+    {
+      "name": "崩铁大月卡",
+      "amount": 68,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-07-14",
+      "note": "崩坏：星穹铁道 大月卡"
+    },
+    {
+      "name": "打车",
+      "amount": 11,
+      "currency": "USD",
+      "type": "支出",
+      "category": "交通",
+      "date": "2026-07-14",
+      "note": "打车"
+    },
+    {
+      "name": "话费分摊",
+      "amount": 33.33,
+      "currency": "USD",
+      "type": "支出",
+      "category": "月扣",
+      "date": "2026-07-14",
+      "note": "3人合用话费 $100/月，分摊每人 $33.33"
+    },
+    {
+      "name": "显示器寄修邮费",
+      "amount": 40,
+      "currency": "USD",
+      "type": "支出",
+      "category": "其他 📦",
+      "date": "2026-07-12",
+      "note": "显示器寄修到加州的邮费"
+    },
+    {
+      "name": "沃尔玛购物 + 打车",
+      "amount": 258,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "其他 📦",
+      "date": "2026-07-12",
+      "note": "沃尔玛购物 + 打车"
+    },
     {
       "name": "烤肉",
       "amount": 40,
