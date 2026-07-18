@@ -1,7 +1,25 @@
 {
-  "updatedAt": "2026-07-16T23:10:50-05:00",
-  "rate": 6.78034,
+  "updatedAt": "2026-07-17T23:11:03-05:00",
+  "rate": 6.784582,
   "entries": [
+    {
+      "name": "外卖",
+      "amount": 53,
+      "currency": "USD",
+      "type": "支出",
+      "category": "饮食 🍜",
+      "date": "2026-07-17",
+      "note": "外卖 $53"
+    },
+    {
+      "name": "电蚊香蓝光灯",
+      "amount": 50,
+      "currency": "USD",
+      "type": "支出",
+      "category": "其他 📦",
+      "date": "2026-07-17",
+      "note": "电蚊香蓝光灯"
+    },
     {
       "name": "外卖",
       "amount": 50,
