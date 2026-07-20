@@ -1,7 +1,25 @@
 {
-  "updatedAt": "2026-07-18T23:10:21-05:00",
-  "rate": 6.7892,
+  "updatedAt": "2026-07-19T23:10:38-05:00",
+  "rate": 6.78091,
   "entries": [
+    {
+      "name": "鸣潮礼包",
+      "amount": 98,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-07-19",
+      "note": "鸣潮礼包 ¥98"
+    },
+    {
+      "name": "外卖",
+      "amount": 40,
+      "currency": "USD",
+      "type": "支出",
+      "category": "饮食 🍜",
+      "date": "2026-07-19",
+      "note": "外卖 $40"
+    },
     {
       "name": "外卖",
       "amount": 53,
