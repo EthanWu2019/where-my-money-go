@@ -1,7 +1,43 @@
 {
-  "updatedAt": "2026-07-19T23:10:38-05:00",
-  "rate": 6.78091,
+  "updatedAt": "2026-07-20T23:10:20-05:00",
+  "rate": 6.778084,
   "entries": [
+    {
+      "name": "看电影奥德赛爆米花饮料",
+      "amount": 22,
+      "currency": "USD",
+      "type": "支出",
+      "category": "娱乐",
+      "date": "2026-07-21",
+      "note": "看电影爆米花饮料"
+    },
+    {
+      "name": "weee买菜",
+      "amount": 155,
+      "currency": "USD",
+      "type": "支出",
+      "category": "饮食 🍜",
+      "date": "2026-07-20",
+      "note": "weee买菜"
+    },
+    {
+      "name": "亚米购物",
+      "amount": 55,
+      "currency": "USD",
+      "type": "支出",
+      "category": "其他 📦",
+      "date": "2026-07-20",
+      "note": "亚米 榨菜 料酒 防晒"
+    },
+    {
+      "name": "外卖",
+      "amount": 44,
+      "currency": "USD",
+      "type": "支出",
+      "category": "饮食 🍜",
+      "date": "2026-07-20",
+      "note": "外卖 $44"
+    },
     {
       "name": "鸣潮礼包",
       "amount": 98,
