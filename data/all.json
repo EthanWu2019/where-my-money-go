@@ -1,14 +1,32 @@
 {
-  "updatedAt": "2026-07-20T23:10:20-05:00",
-  "rate": 6.778084,
+  "updatedAt": "2026-07-22T01:36:09-05:00",
+  "rate": 6.776686,
   "entries": [
+    {
+      "name": "外卖",
+      "amount": 40,
+      "currency": "USD",
+      "type": "支出",
+      "category": "饮食 🍜",
+      "date": "2026-07-22",
+      "note": "外卖 $40"
+    },
+    {
+      "name": "打车",
+      "amount": 20,
+      "currency": "USD",
+      "type": "支出",
+      "category": "交通",
+      "date": "2026-07-20",
+      "note": "看电影来回打车"
+    },
     {
       "name": "看电影奥德赛爆米花饮料",
       "amount": 22,
       "currency": "USD",
       "type": "支出",
       "category": "娱乐",
-      "date": "2026-07-21",
+      "date": "2026-07-20",
       "note": "看电影爆米花饮料"
     },
     {
