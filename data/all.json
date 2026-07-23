@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-07-22T01:36:09-05:00",
-  "rate": 6.776686,
+  "updatedAt": "2026-07-22T23:10:58-05:00",
+  "rate": 6.781523,
   "entries": [
+    {
+      "name": "running hub月度会员",
+      "amount": 69,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "健身",
+      "date": "2026-07-22",
+      "note": "running hub月度会员"
+    },
     {
       "name": "外卖",
       "amount": 40,
