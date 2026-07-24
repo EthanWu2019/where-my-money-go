@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-07-22T23:10:58-05:00",
-  "rate": 6.781523,
+  "updatedAt": "2026-07-23T23:10:27-05:00",
+  "rate": 6.783033,
   "entries": [
+    {
+      "name": "超市采买",
+      "amount": 122,
+      "currency": "USD",
+      "type": "支出",
+      "category": "饮食 🍜",
+      "date": "2026-07-23",
+      "note": "饮料、矿泉水、培根、面包、牛奶"
+    },
     {
       "name": "running hub月度会员",
       "amount": 69,
