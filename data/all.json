@@ -1,7 +1,43 @@
 {
-  "updatedAt": "2026-07-27T23:10:58-05:00",
-  "rate": 6.774553,
+  "updatedAt": "2026-07-29T23:10:51-05:00",
+  "rate": 6.773647,
   "entries": [
+    {
+      "name": "鸣潮",
+      "amount": 198,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-07-29",
+      "note": ""
+    },
+    {
+      "name": "鸣潮",
+      "amount": 68,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-07-29",
+      "note": "第2笔"
+    },
+    {
+      "name": "鸣潮",
+      "amount": 68,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-07-29",
+      "note": "第1笔"
+    },
+    {
+      "name": "外卖",
+      "amount": 67,
+      "currency": "USD",
+      "type": "支出",
+      "category": "饮食 🍜",
+      "date": "2026-07-29",
+      "note": ""
+    },
     {
       "name": "点外卖",
       "amount": 50,
