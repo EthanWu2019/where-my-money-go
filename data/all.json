@@ -1,7 +1,52 @@
 {
-  "updatedAt": "2026-07-30T23:11:12-05:00",
-  "rate": 6.765736,
+  "updatedAt": "2026-07-31T23:10:26-05:00",
+  "rate": 6.764897,
   "entries": [
+    {
+      "name": "明日方舟夏活礼包",
+      "amount": 328,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-07-31",
+      "note": ""
+    },
+    {
+      "name": "买蓝莓果汁",
+      "amount": 16,
+      "currency": "USD",
+      "type": "支出",
+      "category": "饮食 🍜",
+      "date": "2026-07-31",
+      "note": ""
+    },
+    {
+      "name": "房租",
+      "amount": 620,
+      "currency": "USD",
+      "type": "支出",
+      "category": "房租 🏠",
+      "date": "2026-07-31",
+      "note": ""
+    },
+    {
+      "name": "出门吃烤肉火锅",
+      "amount": 45,
+      "currency": "USD",
+      "type": "支出",
+      "category": "饮食 🍜",
+      "date": "2026-07-31",
+      "note": ""
+    },
+    {
+      "name": "鸣潮礼包",
+      "amount": 128,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-07-31",
+      "note": ""
+    },
     {
       "name": "鸣潮",
       "amount": 198,
