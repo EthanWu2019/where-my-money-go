@@ -1,7 +1,43 @@
 {
-  "updatedAt": "2026-07-31T23:10:26-05:00",
-  "rate": 6.764897,
+  "updatedAt": "2026-08-01T23:10:55-05:00",
+  "rate": 6.768807,
   "entries": [
+    {
+      "name": "日用品",
+      "amount": 28,
+      "currency": "USD",
+      "type": "支出",
+      "category": "其他 📦",
+      "date": "2026-08-01",
+      "note": "指甲刀、肠胃药"
+    },
+    {
+      "name": "点外卖",
+      "amount": 58,
+      "currency": "USD",
+      "type": "支出",
+      "category": "饮食 🍜",
+      "date": "2026-08-01",
+      "note": ""
+    },
+    {
+      "name": "崩铁月卡",
+      "amount": 30,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-08-01",
+      "note": ""
+    },
+    {
+      "name": "妈妈转入生活费",
+      "amount": 20000,
+      "currency": "RMB",
+      "type": "收入",
+      "category": "工资 💰",
+      "date": "2026-08-01",
+      "note": "妈妈转入生活费"
+    },
     {
       "name": "明日方舟夏活礼包",
       "amount": 328,
