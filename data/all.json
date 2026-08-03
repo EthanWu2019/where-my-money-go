@@ -1,7 +1,34 @@
 {
-  "updatedAt": "2026-08-01T23:10:55-05:00",
-  "rate": 6.768807,
+  "updatedAt": "2026-08-02T23:10:22-05:00",
+  "rate": 6.759763,
   "entries": [
+    {
+      "name": "租车",
+      "amount": 12,
+      "currency": "USD",
+      "type": "支出",
+      "category": "交通",
+      "date": "2026-08-02",
+      "note": ""
+    },
+    {
+      "name": "剪头发",
+      "amount": 38,
+      "currency": "USD",
+      "type": "支出",
+      "category": "其他 📦",
+      "date": "2026-08-02",
+      "note": ""
+    },
+    {
+      "name": "买菜(肉蛋奶饮料培根面包等)",
+      "amount": 90,
+      "currency": "USD",
+      "type": "支出",
+      "category": "饮食 🍜",
+      "date": "2026-08-02",
+      "note": ""
+    },
     {
       "name": "日用品",
       "amount": 28,
