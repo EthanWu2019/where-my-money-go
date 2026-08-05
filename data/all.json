@@ -1,7 +1,25 @@
 {
-  "updatedAt": "2026-08-03T23:10:46-05:00",
-  "rate": 6.765857,
+  "updatedAt": "2026-08-04T23:11:05-05:00",
+  "rate": 6.762932,
   "entries": [
+    {
+      "name": "睡眠眼罩、垃圾袋、牙线等日用品",
+      "amount": 67,
+      "currency": "USD",
+      "type": "支出",
+      "category": "其他 📦",
+      "date": "2026-08-04",
+      "note": "日用品采购"
+    },
+    {
+      "name": "看电影打车往返",
+      "amount": 20,
+      "currency": "USD",
+      "type": "支出",
+      "category": "交通",
+      "date": "2026-08-04",
+      "note": "看电影往返打车"
+    },
     {
       "name": "Mac Dock 运费",
       "amount": 8,
