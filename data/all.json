@@ -1,7 +1,25 @@
 {
-  "updatedAt": "2026-08-04T23:11:05-05:00",
-  "rate": 6.762932,
+  "updatedAt": "2026-08-05T23:10:46-05:00",
+  "rate": 6.762213,
   "entries": [
+    {
+      "name": "点外卖",
+      "amount": 61,
+      "currency": "USD",
+      "type": "支出",
+      "category": "饮食 🍜",
+      "date": "2026-08-05",
+      "note": "点外卖"
+    },
+    {
+      "name": "异环月卡",
+      "amount": 30,
+      "currency": "CNY",
+      "type": "支出",
+      "category": "娱乐",
+      "date": "2026-08-05",
+      "note": "异环月卡"
+    },
     {
       "name": "睡眠眼罩、垃圾袋、牙线等日用品",
       "amount": 67,
