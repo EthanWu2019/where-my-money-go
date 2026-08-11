@@ -1,7 +1,25 @@
 {
-  "updatedAt": "2026-08-09T23:10:47-05:00",
-  "rate": 6.752312,
+  "updatedAt": "2026-08-10T23:10:13-05:00",
+  "rate": 6.755367,
   "entries": [
+    {
+      "name": "吸尘器和拖鞋",
+      "amount": 77,
+      "currency": "USD",
+      "type": "支出",
+      "category": "其他 📦",
+      "date": "2026-08-10",
+      "note": ""
+    },
+    {
+      "name": "Apple Care One",
+      "amount": 25.98,
+      "currency": "USD",
+      "type": "支出",
+      "category": "月扣",
+      "date": "2026-08-10",
+      "note": "Apple Care月度扣款，每月10号扣款"
+    },
     {
       "name": "外卖",
       "amount": 57,
