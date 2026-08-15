@@ -1,24 +1,33 @@
 {
-  "updatedAt": "2026-08-13T23:10:06-05:00",
-  "rate": 6.757039,
+  "updatedAt": "2026-08-14T23:10:38-05:00",
+  "rate": 6.755647,
   "entries": [
     {
-      "name": "点外卖",
-      "amount": 51,
+      "name": "吃拉面",
+      "amount": 23,
       "currency": "USD",
       "type": "支出",
       "category": "饮食 🍜",
-      "date": "2026-08-11",
+      "date": "2026-08-14",
       "note": ""
     },
     {
-      "name": "异环大月卡",
-      "amount": 68,
+      "name": "Spotify 年卡",
+      "amount": 158,
       "currency": "RMB",
       "type": "支出",
-      "category": "游戏 🎮",
-      "date": "2026-08-11",
-      "note": ""
+      "category": "其他 📦",
+      "date": "2026-08-14",
+      "note": "一次性购买，年付（涨价后价格 158）"
+    },
+    {
+      "name": "话费分摊",
+      "amount": 28.34,
+      "currency": "USD",
+      "type": "支出",
+      "category": "月扣",
+      "date": "2026-08-14",
+      "note": "本月分摊金额未定，先记本月实际数；后续每月金额稳定后再建自动记账"
     },
     {
       "name": "Texas Roadhouse 牛排",
