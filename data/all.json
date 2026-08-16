@@ -1,7 +1,52 @@
 {
-  "updatedAt": "2026-08-14T23:10:38-05:00",
-  "rate": 6.755647,
+  "updatedAt": "2026-08-15T23:10:37-05:00",
+  "rate": 6.760612,
   "entries": [
+    {
+      "name": "妈妈转学费",
+      "amount": 100000,
+      "currency": "RMB",
+      "type": "收入",
+      "category": "工资 💰",
+      "date": "2026-08-14",
+      "note": "学费"
+    },
+    {
+      "name": "Meal Plan 周订",
+      "amount": 95,
+      "currency": "USD",
+      "type": "支出",
+      "category": "饮食 🍜",
+      "date": "2026-08-14",
+      "note": "一周 meal plan 试探性购买，不续订"
+    },
+    {
+      "name": "点外卖",
+      "amount": 51,
+      "currency": "USD",
+      "type": "支出",
+      "category": "饮食 🍜",
+      "date": "2026-08-14",
+      "note": ""
+    },
+    {
+      "name": "湿巾、润滑油",
+      "amount": 70,
+      "currency": "USD",
+      "type": "支出",
+      "category": "其他 📦",
+      "date": "2026-08-14",
+      "note": ""
+    },
+    {
+      "name": "Discord 年费会员",
+      "amount": 280,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "其他 📦",
+      "date": "2026-08-14",
+      "note": "一次性购买，年付"
+    },
     {
       "name": "吃拉面",
       "amount": 23,
