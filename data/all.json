@@ -1,7 +1,34 @@
 {
-  "updatedAt": "2026-08-17T23:10:10-05:00",
-  "rate": 6.753148,
+  "updatedAt": "2026-08-18T23:10:37-05:00",
+  "rate": 6.756911,
   "entries": [
+    {
+      "name": "生鲜",
+      "amount": 140,
+      "currency": "USD",
+      "type": "支出",
+      "category": "饮食 🍜",
+      "date": "2026-08-14",
+      "note": ""
+    },
+    {
+      "name": "外卖",
+      "amount": 47,
+      "currency": "USD",
+      "type": "支出",
+      "category": "饮食 🍜",
+      "date": "2026-08-14",
+      "note": ""
+    },
+    {
+      "name": "停车费",
+      "amount": 5,
+      "currency": "USD",
+      "type": "支出",
+      "category": "交通",
+      "date": "2026-08-14",
+      "note": ""
+    },
     {
       "name": "蚊帐、蚊虫叮咬药、生鲜",
       "amount": 121,
