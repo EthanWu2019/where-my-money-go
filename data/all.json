@@ -1,7 +1,34 @@
 {
-  "updatedAt": "2026-08-18T23:10:37-05:00",
-  "rate": 6.756911,
+  "updatedAt": "2026-08-19T23:10:11-05:00",
+  "rate": 6.746073,
   "entries": [
+    {
+      "name": "鸣潮充能抽清宵",
+      "amount": 7070,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-08-14",
+      "note": ""
+    },
+    {
+      "name": "菜、牛奶、生鲜、饮料",
+      "amount": 75,
+      "currency": "USD",
+      "type": "支出",
+      "category": "饮食 🍜",
+      "date": "2026-08-14",
+      "note": ""
+    },
+    {
+      "name": "妈妈转生活费",
+      "amount": 10000,
+      "currency": "RMB",
+      "type": "收入",
+      "category": "工资 💰",
+      "date": "2026-08-14",
+      "note": ""
+    },
     {
       "name": "生鲜",
       "amount": 140,
