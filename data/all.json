@@ -1,7 +1,25 @@
 {
-  "updatedAt": "2026-08-20T23:10:27-05:00",
-  "rate": 6.739393,
+  "updatedAt": "2026-08-21T23:10:40-05:00",
+  "rate": 6.737851,
   "entries": [
+    {
+      "name": "点外卖",
+      "amount": 308,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "饮食 🍜",
+      "date": "2026-08-14",
+      "note": ""
+    },
+    {
+      "name": "吃饭",
+      "amount": 128,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "饮食 🍜",
+      "date": "2026-08-14",
+      "note": ""
+    },
     {
       "name": "鸣潮充能抽清宵",
       "amount": 7070,
