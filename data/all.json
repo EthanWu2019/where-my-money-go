@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-08-22T23:11:01-05:00",
-  "rate": 6.743047,
+  "updatedAt": "2026-08-23T23:11:06-05:00",
+  "rate": 6.729114,
   "entries": [
+    {
+      "name": "点外卖",
+      "amount": 292,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "饮食 🍜",
+      "date": "2026-08-22",
+      "note": ""
+    },
     {
       "name": "路费",
       "amount": 95,
