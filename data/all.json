@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-08-24T23:10:17-05:00",
-  "rate": 6.738712,
+  "updatedAt": "2026-08-25T23:11:01-05:00",
+  "rate": 6.737012,
   "entries": [
+    {
+      "name": "崩铁月卡",
+      "amount": 128,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-08-24",
+      "note": ""
+    },
     {
       "name": "点外卖",
       "amount": 292,
