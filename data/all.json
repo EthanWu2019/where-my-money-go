@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-08-26T23:11:04-05:00",
-  "rate": 6.737816,
+  "updatedAt": "2026-08-27T23:10:48-05:00",
+  "rate": 6.737174,
   "entries": [
+    {
+      "name": "点外卖",
+      "amount": 324,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "饮食 🍜",
+      "date": "2026-08-24",
+      "note": ""
+    },
     {
       "name": "崩铁月卡",
       "amount": 128,
