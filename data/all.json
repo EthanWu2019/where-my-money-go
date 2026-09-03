@@ -1,7 +1,25 @@
 {
-  "updatedAt": "2026-09-01T23:10:28-05:00",
-  "rate": 6.736913,
+  "updatedAt": "2026-09-02T23:10:57-05:00",
+  "rate": 6.736468,
   "entries": [
+    {
+      "name": "崩铁月卡",
+      "amount": 90,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-08-24",
+      "note": ""
+    },
+    {
+      "name": "meal plan",
+      "amount": 115,
+      "currency": "USD",
+      "type": "支出",
+      "category": "饮食 🍜",
+      "date": "2026-08-24",
+      "note": "本周一周 meal plan"
+    },
     {
       "name": "终末地礼包",
       "amount": 88,
