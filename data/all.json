@@ -1,7 +1,25 @@
 {
-  "updatedAt": "2026-09-07T23:10:38-05:00",
-  "rate": 6.728426,
+  "updatedAt": "2026-09-09T23:10:45-05:00",
+  "rate": 6.725515,
   "entries": [
+    {
+      "name": "meal plan",
+      "amount": 106,
+      "currency": "USD",
+      "type": "支出",
+      "category": "饮食 🍜",
+      "date": "2026-09-08",
+      "note": "本周一周 meal plan"
+    },
+    {
+      "name": "AMC会员费",
+      "amount": 22,
+      "currency": "USD",
+      "type": "支出",
+      "category": "月扣",
+      "date": "2026-09-08",
+      "note": "AMC Stubs A-List月度扣款"
+    },
     {
       "name": "买域名",
       "amount": 105,
