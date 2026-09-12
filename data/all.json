@@ -1,7 +1,79 @@
 {
-  "updatedAt": "2026-09-09T23:10:45-05:00",
-  "rate": 6.725515,
+  "updatedAt": "2026-09-11T23:10:41-05:00",
+  "rate": 6.725314,
   "entries": [
+    {
+      "name": "点外卖",
+      "amount": 314,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "饮食 🍜",
+      "date": "2026-09-10",
+      "note": ""
+    },
+    {
+      "name": "买护肤品",
+      "amount": 46,
+      "currency": "USD",
+      "type": "支出",
+      "category": "其他 📦",
+      "date": "2026-09-10",
+      "note": ""
+    },
+    {
+      "name": "鸣潮月卡",
+      "amount": 60,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-09-10",
+      "note": ""
+    },
+    {
+      "name": "鸣潮礼包",
+      "amount": 198,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-09-10",
+      "note": ""
+    },
+    {
+      "name": "鸣潮礼包",
+      "amount": 68,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-09-10",
+      "note": ""
+    },
+    {
+      "name": "鸣潮礼包",
+      "amount": 68,
+      "currency": "RMB",
+      "type": "支出",
+      "category": "游戏 🎮",
+      "date": "2026-09-10",
+      "note": ""
+    },
+    {
+      "name": "在外面吃饭",
+      "amount": 20,
+      "currency": "USD",
+      "type": "支出",
+      "category": "饮食 🍜",
+      "date": "2026-09-10",
+      "note": ""
+    },
+    {
+      "name": "Apple Care One",
+      "amount": 25.98,
+      "currency": "USD",
+      "type": "支出",
+      "category": "月扣",
+      "date": "2026-09-10",
+      "note": "Apple Care月度扣款，每月10号扣款"
+    },
     {
       "name": "meal plan",
       "amount": 106,
